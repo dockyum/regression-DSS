@@ -70,3 +70,5 @@ df2 = df.copy()
 
 # 3. 성능평가
 # 4. REVIEW
+1. 2-3에서 첫번째 regression시 cylinders와 Co2 배출량과의 상관관계를 각 회사마다 rmse,coef,intercept를 각각 구해서 비교해봤는데 Engine Size도 같이 넣어서 구해보고, 따로 구해보기도 하면서 각 모델들을 비교해볼 예정
+ 
