@@ -119,7 +119,7 @@ label의 분포 확인
 
         <img width="393" alt="pred" src="https://user-images.githubusercontent.com/18084336/112607108-2db67600-8e5c-11eb-88db-ec225e6179f3.png">
 
-4. Other Regressors
+4. Regressors
     - KNeighborsRegressor \
     RMSE of Train : 15.06 , Test : 17.97 / Score of Train: 0.9335 , Score of Test: 0.9068
     - DecisionTreeRegressor \
@@ -130,7 +130,18 @@ label의 분포 확인
 ### 3-3. 변속기, 실린더 수 대비 CO2 배출량 회귀분석
 전체 특성을 다 이용하지 않고도 회귀분석이 가능하지 않을까 하는 의문
 
-1. 
+1. 전처리
+    - `Transmission` 특성의 변속기 타입과 숫자 분리
+
+        <img width="499" alt="transmission data" src="https://user-images.githubusercontent.com/18084336/112612252-0cf11f00-8e62-11eb-9348-5821a7855732.png">
+
+    - 변속기 타입 컬럼 onehotencoding
+    - `Cylinders` 특성 추가한 df 생성
+
+        <img width="287" alt="trans-cylinder-df" src="https://user-images.githubusercontent.com/18084336/112612767-a5879f00-8e62-11eb-8548-45adf1116e92.png">
+
+2. LinearRegression
+    - RMSE of Train : 30.14 , Test : 31.18 / Score of Train: 0.7316 , Score of Test: 0.7232
 ## 4. REVIEW
 1. 2-3에서 첫번째 regression시 cylinders와 Co2 배출량과의 상관관계를 각 회사마다 rmse,coef,intercept를 각각 구해서 비교해봤는데 Engine Size도 같이 넣어서 구해보고, 따로 구해보기도 하면서 각 모델들을 비교해볼 예정
 2. EDA를 꼼꼼히 해야 ML 계획 및 방향을 잘 세울 수 있겠다. 몇 개의 체크리스트를 가지는 것도 좋겠다는 생각.
