@@ -1,5 +1,5 @@
 # 캐나다 차량별 CO2 배출 회귀 분석
-
+- fastcampus datascience class
 <img src="./asset/canada_car.jfif" width="500px" /><br/>
 
 ## 1. Intro
