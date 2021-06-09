@@ -166,3 +166,5 @@ RMSE of Train : 12.77 , Test : 15.37 / Score of Train: 0.9522 , Score of Test: 0
 
 ----
 project from [Fast campus Datascience School](https://github.com/dss-16th)
+
+(프로젝트 종료 이후 개인 수정되었습니다)
