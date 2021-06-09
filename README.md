@@ -2,7 +2,7 @@
 
 <img src="./asset/canada_car.jfif" width="360px" /><br/>
 
-> 차량의 특성만으로 CO2 배출량을 예측해보자!
+> 차량의 일부 특성만으로 CO2 배출량을 예측해보자!
 
 
 ## 1. Intro
@@ -140,7 +140,7 @@ RMSE of Train : 12.58 , Test : 15.65 / Score of Train: 0.9536 , Score of Test: 0
 RMSE of Train : 12.77 , Test : 15.37 / Score of Train: 0.9522 , Score of Test: 0.9318
 
 ### 3-3. 변속기, 실린더 수 대비 CO2 배출량 회귀분석
-전체 특성을 다 이용하지 않고도 회귀분석이 가능하지 않을까 하는 의문
+2개의 특성만으로 회귀분석
 
 #### 1. 전처리
 
@@ -158,10 +158,11 @@ RMSE of Train : 12.77 , Test : 15.37 / Score of Train: 0.9522 , Score of Test: 0
 
 ## 4. REVIEW
 1. EDA를 꼼꼼히 해야 ML 계획 및 방향을 잘 세울 수 있겠다. 가능성이 있는 몇 개의 체크리스트를 가지는 것도 좋겠다는 생각.
-    > 기본적으로 데이터에는 오류가 있을 수 있다는 자세로 접근할 필요가 있다.
+    > 기본적으로 데이터에는 오류가 있다는 자세로 접근할 필요가 있다. 전체 데이터 중 사용할 수 없는 데이터를 먼저 찾아내자.
+    > matplotlib에서 제공하는 plot 마다 명확한 목적이 있다. categorical data의 분포는 scatterplot을 쓴다는 둥. 공부가 더 필요하다.
 
 2. 도출한 모델이 신뢰 가능한 지 질문하는 자세가 필요하다. 내가 만든 모델이 잘 만들어졌다고 어떻게 논리적으로 설명할 수 있을까?
-
+    > ML에서는 설명력도 중요하다.
 
 ----
 project from [Fast campus Datascience School](https://github.com/dss-16th)
